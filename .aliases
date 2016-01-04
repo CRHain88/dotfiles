@@ -9,7 +9,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Google\ Drive/"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
@@ -149,3 +149,14 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# CRHain Custom
+# Delete merged git branches
+alias git-sync='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+
+# Incognito commit messages
+alias qm-go='git config --local user.name QuailMan; git config --local user.email @; echo You are now QuailMan!'
+alias qm-end='git config --local --unset user.name; git config --local --unset user.email; echo You are back to reality.'
+
+# Reset AMPPS SQL
+alias reset-ampps='rm -rf ~/Google\ Drive/.amppsVar/var/ib_logfile*; rm ~/Google\ Drive/.amppsVar/var/mysql.*;'
