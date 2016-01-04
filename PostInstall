@@ -1,0 +1,36 @@
+#!/user/bin/env bash
+
+# config variables
+rbversion=2.1.2;
+gitname="Christian Hain";
+gitemail=christian.hain@turner.com;
+
+# Set git credentials
+git config --global user.name "$gitname";
+git config --global user.email $gitemail;
+
+# Install Ruby Version
+rbenv install $rbversion;
+rbenv global $rbversion;
+source ~/.bashrc;
+
+gem install bundler;
+gem install git-up;
+
+npm install -g bower;
+npm install -g grunt-cli;
+
+# Link Atom
+printf "\n%s\n" "linking ~/.atom to Google Drive";
+rm -rf ~/.atom;
+ln -s ~/Google\ Drive/.atom/ ~/.atom;
+printf "\n" "~/.atom is linked";
+
+# Link AAMPS
+printf "\n%s\n" "linking AMPPS var directory to Google Drive";
+rm -rf /opt/homebrew-cask/Caskroom/ampps/2.3/AMPPS/var;
+ln -s ~/Google\ Drive/.amppsVar/var /opt/homebrew-cask/Caskroom/ampps/2.3/AMPPS/var;
+printf "\n" "AMPPS var directory is linked";
+
+# Resource the bash window
+source ~/.bashrc;

@@ -1,0 +1,20 @@
+#!/user/bin/env bash
+
+# Set up ssh keys on github to clone the repo
+#
+# $ ssh-keygen
+# $ pbcopy < ~/.ssh/id_rsa.pub
+#
+##############################################
+
+# Install xcode
+xcode-select --install
+sudo xcode-select --switch /Library/Developer/CommandLineTools
+
+# Install Homebrew
+ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
+
+# Resource the bash window
+source ~/.bashrc;
+
+printf "Homebrew successfully installed. Next run 'brew bundle Brewfile'"
