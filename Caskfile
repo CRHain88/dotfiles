@@ -1,0 +1,64 @@
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+# No longer works. Figure out how to add this to .extra or something...
+
+brew install node
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Development
+brew cask install charles 2> /dev/null
+brew cask install atom 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install ampps 2> /dev/null
+brew cask install virtualbox 2> /dev/null
+#brew cask install sublime-text 2> /dev/null
+#brew cask install transmission 2> /dev/null
+#brew cask install macvim 2> /dev/null
+#brew cask install imagealpha 2> /dev/null
+#brew cask install imageoptim 2> /dev/null
+
+# Core Functionality
+brew cask install appcleaner 2> /dev/null
+#brew cask install the-unarchiver 2> /dev/null
+#brew cask install dropbox 2> /dev/null
+#brew cask install ukelele 2> /dev/null
+
+# Google Slavery
+brew cask install google-chrome 2> /dev/null
+brew cask install google-chrome-canary 2> /dev/null
+brew cask install google-drive 2> /dev/null
+brew cask install google-earth 2> /dev/null
+brew cask install google-hangouts 2> /dev/null
+brew cask install chromecast 2> /dev/null
+
+# Nice to have
+brew cask install firefox 2> /dev/null
+brew cask install skype 2> /dev/null
+brew cask install opera 2> /dev/null
+brew cask install opera-developer 2> /dev/null
+brew cask install opera-next 2> /dev/null
+brew cask install vlc 2> /dev/null
+brew cask install torbrowser 2> /dev/null
+brew cask install miro-video-converter 2> /dev/null
+brew cask install skitch 2> /dev/null
+brew cask install evernote 2> /dev/null
+brew cask install retinacapture 2> /dev/null
+brew cask install keka 2> /dev/null
+brew cask install silverlight 2> /dev/null
+brew cask install java 2> /dev/null
+
+# CRHain Specific
+brew cask install sketch 2> /dev/null
+brew cask install totals 2> /dev/null
+brew cask install hipchat 2> /dev/null
+brew cask install slack 2> /dev/null
+brew cask install airmail 2> /dev/null
+brew cask install monotype-skyfonts 2> /dev/null
+brew cask install sqlitebrowser 2> /dev/null
+
+# cleanup
+brew cleanup --force
+rm -f -r /Library/Caches/Homebrew/*
