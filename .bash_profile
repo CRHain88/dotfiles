@@ -51,6 +51,7 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 if [ -f /usr/local/bin/rbenv ]; then
 	eval "$(rbenv init -)"
 fi
+export PATH="$HOME/.gem/ruby/2.0.0/bin:$PATH"
 
 # Git completion
 if [ -f ~/.git-completion.bash ]; then
