@@ -10,11 +10,11 @@ brew tap caskroom/versions
 
 # Development
 brew cask install charles 2> /dev/null
+brew cask install sublime-text 2> /dev/null
 brew cask install atom 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install ampps 2> /dev/null
 brew cask install virtualbox 2> /dev/null
-#brew cask install sublime-text 2> /dev/null
 #brew cask install transmission 2> /dev/null
 #brew cask install macvim 2> /dev/null
 #brew cask install imagealpha 2> /dev/null
@@ -49,15 +49,17 @@ brew cask install retinacapture 2> /dev/null
 brew cask install keka 2> /dev/null
 brew cask install silverlight 2> /dev/null
 brew cask install java 2> /dev/null
+brew cask install gpgtools 2> /dev/null
+brew cask install slack 2> /dev/null
+brew cask install sketch 2> /dev/null
 
 # CRHain Specific
-brew cask install sketch 2> /dev/null
 brew cask install totals 2> /dev/null
-brew cask install hipchat 2> /dev/null
-brew cask install slack 2> /dev/null
 brew cask install airmail 2> /dev/null
 brew cask install monotype-skyfonts 2> /dev/null
 brew cask install sqlitebrowser 2> /dev/null
+brew cask install grammarly 2> /dev/null
+brew cask install spotify 2> /dev/null
 
 # cleanup
 brew cleanup --force
