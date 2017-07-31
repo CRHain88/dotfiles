@@ -1,0 +1,74 @@
+# Install native apps
+# Usage: `brew bundle Caskfile`
+
+# No longer works. Figure out how to add this to .extra or something...
+
+brew install node
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Development
+#brew cask install ampps 2> /dev/null
+#brew cask install charles 2> /dev/null
+#brew cask install imagealpha 2> /dev/null
+#brew cask install imageoptim 2> /dev/null
+#brew cask install macvim 2> /dev/null
+#brew cask install sublime-text 2> /dev/null
+#brew cask install virtualbox 2> /dev/null
+brew cask install atom 2> /dev/null
+brew cask install caskroom/fonts/font-hack 2> /dev/null
+brew cask install docker 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install postman 2> /dev/null
+brew cask install staruml 2> /dev/null
+brew cask install transmission 2> /dev/null
+brew cask install visual-studio-code 2> /dev/null
+
+# Core Functionality
+#brew cask install dropbox 2> /dev/null
+#brew cask install the-unarchiver 2> /dev/null
+#brew cask install ukelele 2> /dev/null
+brew cask install appcleaner 2> /dev/null
+brew cask install little-snitch 2> /dev/null
+
+# Google Slavery
+brew cask install google-chrome 2> /dev/null
+
+# Nice to have
+#brew cask install retinacapture 2> /dev/null
+brew cask install 1password 2> /dev/null
+brew cask install adobe-creative-cloud 2> /dev/null
+brew cask install airmail 2> /dev/null
+brew cask install datacolor-spyder-elite 2> /dev/null
+brew cask install evernote 2> /dev/null
+brew cask install fantastical 2> /dev/null
+brew cask install firefox 2> /dev/null
+brew cask install gpgtools 2> /dev/null
+brew cask install grammarly 2> /dev/null
+brew cask install keka 2> /dev/null
+brew cask install macdown 2> /dev/null
+brew cask install sketch 2> /dev/null
+brew cask install skitch 2> /dev/null
+brew cask install slack 2> /dev/null
+brew cask install spotify 2> /dev/null
+brew cask install torbrowser 2> /dev/null
+brew cask install vlc 2> /dev/null
+
+# Personal
+brew cask install logitech-camera-settings 2> /dev/null
+brew cask install origin 2> /dev/null
+brew cask install agenda 2> /dev/null
+
+# Fabric.com Specific
+#brew cask install amazon-workspaces 2> /dev/null
+brew cask install amazon-chime 2> /dev/null
+brew cask install amazon-workdocs 2> /dev/null
+brew cask install malwarebytes 2> /dev/null
+brew cask install mattermost 2> /dev/null
+brew cask install openconnect 2> /dev/null
+
+# cleanup
+brew cleanup --force
+brew cask cleanup
+rm -f -r /Library/Caches/Homebrew/*
